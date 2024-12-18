@@ -5,13 +5,40 @@
 body {
   text-align: center;
 }
-.row {  
-  display: flex;
-  flex-wrap: wrap;
+.container {
+  position: relative;
+  width: 100%;
 }
 .image {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: block;
+  width: 480px;
+  height: 270px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7b7b7b;
+}
+.container:hover.overlay {
+  opacity: 0.8;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 </style>
 
@@ -19,20 +46,47 @@ body {
 <h1>Chris Woods</h1>
 <p>Multi-Dimensional Animator</p>
 
-<div class="row">
+
+<div class="container">
   <a href="test.html">
     <img src="docs/assets/images/3D.jpg" alt="3D Animation" style="width:480px;height:270px;">
+    <div class="overlay">
+      <div class="text">3D Animation</div>
+    </div>
   </a>
+</div>
+
+<div class="container">
   <a href="test.html">
     <img src="docs/assets/images/2D.png" alt="2D Animation" style="width:480px;height:270px;">
+    <div class="overlay">
+      <div class="text">3D Animation</div>
+    </div>
   </a>
+</div>
+
+<div class="container">  
   <a href="test.html">
     <img src="docs/assets/images/BG3.jpg" alt="Baldur's Gate 3" style="width:480px;height:270px;">
+    <div class="overlay">
+      <div class="text">3D Animation</div>
+    </div>
   </a>
+</div>
+
+<div class="container">
   <a href="test.html">
     <img src="docs/assets/images/Parrots.png" alt="Solo Game Dev" style="width:480px;height:270px;">
+    <div class="overlay">
+      <div class="text">3D Animation</div>
+    </div>
   </a>
+</div>
+
 </div>
 
 </body>
 </html>
+
+
+
