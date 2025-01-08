@@ -1,0 +1,4 @@
+website to do list
+- add favicon
+- add page titles
+- add navigation bar to bottom of each page
