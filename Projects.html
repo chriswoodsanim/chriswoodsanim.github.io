@@ -9,33 +9,67 @@
 
 <style>
 body {
-  font-family: "Space Mono";
-  text-align: center;
+	font-family: "Space Mono";
+	text-align: center;
 } 
 .navigation {
-display: flex;
-justify-content: center;
-gap: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
 }
-body, html {width: 100%; height: 100%; margin: 0; padding: 0}
-.row-container {display: flex;  flex-direction: column;}
-.first-row {}
-.second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
-.resizer { display:flex; margin:0; padding:0; resize:vertical; overflow:hidden }
-.resizer > .resized { flex-grow:1; width: 100%; height: 720px; margin:0; padding:0; border:0 }
+body, html {
+	width: 100%; height: 100%; margin: 0; padding: 0
+}
+
+.video-column{
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto;
+	margin: auto;
+	max-width: 1080px;
+	gap: 10px;
+}
+.video {
+	position: relative;
+	display: block;
+	width: 90%; /* width of iframe wrapper */
+	height: 0;
+	margin: auto;
+	padding: 0% 0% 56.25%; /* 16:9 ratio */
+	overflow: hidden;
+}
+.video iframe {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.image {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.container {
+	position: relative;
+	margin: auto;
+	width: 80%;
+	height: 80%;
+}
 
 /* Style all font awesome icons */
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
+  }
 
 </style>
 </head>
@@ -44,75 +78,82 @@ body, html {width: 100%; height: 100%; margin: 0; padding: 0}
 
 <h1>Projects</h1>
 
+<div class="video-column">
 
-<div class="row-container">
-  <div class="first-row">
-    <h2>Subnautica 2</h2>
-      <p>Announcement Trailer</p>
-  </div>
-<div class="resizer">
-  <iframe class="resized" src="https://www.youtube.com/embed/WS0vTRl_2PQ?si=TQCt9RB6gqYdKTTA" title="YouTube video player"   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
+	<h2>Subnautica 2 - Announcement Trailer</h2>
 
-<div>
-  <div>
-    <h2>Splitgate 2</h2>
-    <p>Coming soon... </p>
-  </div>
-</div>
+	<div class="video">
+		<iframe 
+			src="https://www.youtube.com/embed/WS0vTRl_2PQ?si=TQCt9RB6gqYdKTTA" 
+			title="YouTube video player"   
+			frameborder="1" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			referrerpolicy="strict-origin-when-cross-origin" 
+			allowfullscreen>
+		</iframe>
+	</div>
+	
+	<h2>Splitgate 2 - Coming Soon...</h2>
+	
+	<div class="container">
+		<img src="docs/assets/images/Splitgate.jpg" alt="3D Animation" class="image">
+	</div>
+	
+	<h2>Baldur's Gate 3 - Mocap</h2>
+	
+	<div class="video">		
+		<iframe 
+			src="https://player.vimeo.com/video/866022971?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+			frameborder="1" 
+			allow="autoplay; fullscreen; picture-in-picture; clipboard-write"  
+			title="Baldur's Gate 3 - Chris Woods - Animation Reel">
+		</iframe>
+	</div>	
+	
+	<h2>Baldur's Gate 3 - Creatures</h2>
+	
+	<div class="video">
+		<iframe 
+			src="https://player.vimeo.com/video/866019111?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+			frameborder="1" 
+			allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+			title="Baldur's Gate 3 - Chris Woods - Creature Reel">
+		</iframe>
+	</div>
+	
+	<h2>Star Trek - Fleet Command</h2>
+	
+	<div class="video">
+		<iframe 
+			src="https://player.vimeo.com/video/522727192?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479 
+			frameborder="1" 
+			allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+			title="Star Trek Fleet Command">
+		</iframe>
+	</div>
 
-<div class="row-container">
-  <div class="first-row">
-    <h2>Baldur's Gate 3</h2>
-    <p>Mocap</p>
-  </div>
-<div class="resizer">
-  <iframe class="resized" src="https://player.vimeo.com/video/866022971?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"  title="Baldur's Gate 3 - Chris Woods - Animation Reel"></iframe>
-</div>
-</div>
-
-<div class="row-container">
-  <div class="first-row">
-    <h2>Baldur's Gate 3</h2>
-    <p>Creatures</p>
-  </div>
-<div class="resizer">
-  <iframe class="resized" src="https://player.vimeo.com/video/866019111?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Baldur's Gate 3 - Chris Woods - Creature Reel"></iframe>
-</div>
-</div>
-
-
-<div class="row-container">
-  <div class="first-row">
-    <h2>Star Trek</h2>
-    <p>Fleet Command</p>
-  </div>
-<div class="resizer">
-  <iframe class="resized" src="https://player.vimeo.com/video/522727192?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Star Trek Fleet Command Animation Showreel"></iframe>
-</div>
 </div>
 
 
 <div class="navigation">
 
-<a href="3D.html" >
-  <p>3D Animation</p>
-</a>
+	<a href="3D.html" >
+	  <p>3D Animation</p>
+	</a>
 
-<a href="2D.html" >
-  <p>2D Animation</p>
-</a>
+	<a href="2D.html" >
+	  <p>2D Animation</p>
+	</a>
 
-<a href="GameDev.html" >
-  <p>Game Dev</p>
-</a>
+	<a href="GameDev.html" >
+	  <p>Game Dev</p>
+	</a>
 
 </div>
 
 
 <a href="index.html" >
-  <p>Return to homepage</p>
+  <p>Return to Homepage</p>
 </a>
 
 

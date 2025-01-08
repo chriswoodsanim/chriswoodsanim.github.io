@@ -9,104 +9,104 @@
 
 <style>
 body {
-  font-family: "Space Mono";
-  text-align: center;
+	font-family: "Space Mono";
+	text-align: center;
 }
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
 }
 .image-column{
-display: flex;
-flex-direction: column;
-flex-basis: auto;
-margin: auto;
-max-width: 640px;
-gap: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto;
+	margin: auto;
+	max-width: 640px;
+	gap: 15px;
 }
 .words-column{
-flex-basis: auto;
-margin: auto;
-width: 80%;
+	flex-basis: auto;
+	margin: auto;
+	width: 80%;
 }
 .navigation {
-display: flex;
-justify-content: center;
-gap: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
 }
 .container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 .row-container {
-display: flex; 
-width: 100%; 
-height: 100%; 
-flex-direction: column;  
-overflow: hidden;
-padding-top: 20px;
-padding-bottom: 20px;
+	display: flex; 
+	width: 100%; 
+	height: 100%; 
+	flex-direction: column;  
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .image {
-  display: block;
-  width: 100%;
-  height: 100%;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 .blur img{
-transition: 0.5s ease;
+	transition: 0.5s ease;
 }
 
 .blur img:hover {
--webkit-filter: blur(3px);
-transition: 0.5s ease;
+	-webkit-filter: blur(3px);
+	transition: 0.5s ease;
 }
 .overlay {
-  position: absolute;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: .5s ease;
+	position: absolute;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: .5s ease;
 }
 .container:hover .overlay {
-  opacity: 1;
+	opacity: 1;
 }
 .text {
-  color: white;
-  font-size: 20px;
-  text-shadow:
-    -1px -1px 0 #888,
-    1px -1px 0 #888,
-    -1px 1px 0 #888,
-    1px 1px 0 #888;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+	color: white;
+	font-size: 20px;
+	text-shadow:
+	-1px -1px 0 #888,
+	1px -1px 0 #888,
+	-1px 1px 0 #888,
+	1px 1px 0 #888;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 /* Style all font awesome icons */
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
+  }
 
 </style>
 </head>
@@ -121,46 +121,46 @@ transition: 0.5s ease;
 
   <div class="image-column">
   
-  <div class="container">
-    <a href="3D.html">
-      <div class="blur">
-        <img src="docs/assets/images/3D.jpg" alt="3D Animation" class="image">
-      </div>
-      <div class="overlay">
-        <div class="text">3D Animation</div>
-      </div>
-  </div>
-  
-  <div class="container">
-    <a href="2D.html">
-      <div class="blur">
-        <img src="docs/assets/images/2D.png" alt="2D Animation" class="image">
-      </div>
-      <div class="overlay">
-        <div class="text">2D Animation</div>
-      </div>
-  </div>
-  
-  <div class="container">  
-    <a href="Projects.html">
-      <div class="blur">
-        <img src="docs/assets/images/BG3.jpg" alt="Projects" class="image">
-      <div class="overlay">
-        <div class="text">Projects</div>
-      </div>
-      </div>       
-  </div>
-  
-  <div class="container">
-    <a href="GameDev.html">
-      <div class="blur">
-        <img src="docs/assets/images/Parrots.png" alt="Solo Game Dev" class="image">
-      </div>
-      <div class="overlay">
-        <div class="text">Game Development</div>
-      </div>  
-    </a>
-  </div>
+	  <div class="container">
+		<a href="3D.html">
+		  <div class="blur">
+			<img src="docs/assets/images/3D.jpg" alt="3D Animation" class="image">
+		  </div>
+		  <div class="overlay">
+			<div class="text">3D Animation</div>
+		  </div>
+	  </div>
+	  
+	  <div class="container">
+		<a href="2D.html">
+		  <div class="blur">
+			<img src="docs/assets/images/2D.png" alt="2D Animation" class="image">
+		  </div>
+		  <div class="overlay">
+			<div class="text">2D Animation</div>
+		  </div>
+	  </div>
+	  
+	  <div class="container">  
+		<a href="Projects.html">
+		  <div class="blur">
+			<img src="docs/assets/images/BG3.jpg" alt="Projects" class="image">
+		  <div class="overlay">
+			<div class="text">Projects</div>
+		  </div>
+		  </div>       
+	  </div>
+	  
+	  <div class="container">
+		<a href="GameDev.html">
+		  <div class="blur">
+			<img src="docs/assets/images/Parrots.png" alt="Solo Game Dev" class="image">
+		  </div>
+		  <div class="overlay">
+			<div class="text">Game Development</div>
+		  </div>  
+		</a>
+	  </div>
 
   </div>
 
@@ -211,13 +211,13 @@ transition: 0.5s ease;
 </body>
 
 <footer>
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Add font awesome icons -->
-<a href="https://vimeo.com/chriswoodsanimation" class="fa fa-vimeo"></a>
-<a href="https://www.instagram.com/chrisdoesdrawing/" class="fa fa-instagram"></a>
-<a href="https://www.linkedin.com/in/chris-woods-962b7b14a/" class="fa fa-linkedin"></a>
+	<!-- Add font awesome icons -->
+	<a href="https://vimeo.com/chriswoodsanimation" class="fa fa-vimeo"></a>
+	<a href="https://www.instagram.com/chrisdoesdrawing/" class="fa fa-instagram"></a>
+	<a href="https://www.linkedin.com/in/chris-woods-962b7b14a/" class="fa fa-linkedin"></a>
 </footer>
 
 </html>
